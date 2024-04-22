@@ -2,7 +2,7 @@ console.log('first')
 
 
 async function getSongs() {
-    let songAPI = await fetch("http://127.0.0.1:5500/song/")
+    let songAPI = await fetch("http://127.0.0.1:5500/songs/")
     let responce = await songAPI.text();
     // console.log(responce)
     let div = document.createElement("div");
@@ -20,7 +20,17 @@ async function getSongs() {
 
 async function main() {
     let songs = await getSongs()
-    console.log(songs)
+    let audio = new Audio(songs[3]);
+    audio.play();
+    
+    setInterval(() => {
+        audio.addEventListener("loadeddata", () => {
+            let duration = audio.duration;
+            console.log(duration)
+        })
+    }, 1);
+          
 }
+
 
 main()
