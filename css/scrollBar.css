@@ -1,0 +1,68 @@
+
+.cardContiner {
+    overflow-y: scroll; /* Enable scrolling for the target element */
+  }
+  
+  /* Style the scrollbar track (background) */
+  .cardContiner::-webkit-scrollbar {
+    width: 10px; /* Adjust width as desired */
+  }
+  
+  .cardContiner::-webkit-scrollbar-track {
+    background-color: #222; /* Dark background color */
+  }
+  
+  /* Style the scrollbar thumb */
+  .cardContiner::-webkit-scrollbar-thumb {
+    background-color: #444; /* Slightly lighter color for thumb */
+    border-radius: 6px; /* Add rounded corners */
+  }
+  
+  /* Optional: Style the scrollbar buttons (on hover) */
+  .cardContiner::-webkit-scrollbar-button {
+    display: none; /* Hide default buttons */
+  }
+  
+  .cardContiner:hover::-webkit-scrollbar-button {
+    display: block; /* Show buttons on hover */
+    background-color: #222; /* Dark background for buttons */
+  }
+  
+  /* Additional styling for a modern look (optional) */
+  .cardContiner::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Slightly brighter on hover */
+  }
+  
+  body {
+    overflow-y: scroll; /* Enable scrolling for the target element */
+  }
+  
+  /* Style the scrollbar track (background) */
+  body::-webkit-scrollbar {
+    width: 10px; /* Adjust width as desired */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: #222; /* Dark background color */
+  }
+  
+  /* Style the scrollbar thumb */
+  body::-webkit-scrollbar-thumb {
+    background-color: #444; /* Slightly lighter color for thumb */
+    border-radius: 6px; /* Add rounded corners */
+  }
+  
+  /* Optional: Style the scrollbar buttons (on hover) */
+  body::-webkit-scrollbar-button {
+    display: none; /* Hide default buttons */
+  }
+  
+  body:hover::-webkit-scrollbar-button {
+    display: block; /* Show buttons on hover */
+    background-color: #222; /* Dark background for buttons */
+  }
+  
+  /* Additional styling for a modern look (optional) */
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Slightly brighter on hover */
+  }
