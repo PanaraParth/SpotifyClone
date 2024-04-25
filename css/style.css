@@ -58,7 +58,7 @@ li img {
     border-radius: 10px;
     margin: 10px;
     padding: 15px 15px 20px 15px;
-    min-height: 60vh;
+    min-height: 66vh;
     position: relative;
 }
 
@@ -67,6 +67,7 @@ li img {
     display: flex;
     justify-content: space-between;
     padding-left: 4px;
+    margin-bottom: 10px;
 }
 
 .hedaer:hover {
@@ -128,6 +129,14 @@ li img {
     border-radius: 10px 10px 0px 0px;
     padding: 10px;
     height: 45px;
+}
+
+.nav{
+    gap: 10px;
+}
+
+.nav svg{
+    cursor: pointer;
 }
 
 .sign_btn {
@@ -215,14 +224,136 @@ li img {
     justify-content: space-evenly;
     align-items: center;
     background-color: #00d66b;
-    height: 40px;
+    height: 60px;
     width: 100%;
     position: absolute;
     bottom: 0;
     border-radius: 0px 0px 5px 5px;
 }
 
+.abovebar{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+    width: 100%;
+    padding: 0px 15px;
+}
+
+.songInfo{
+    min-width: 33%;
+    font-weight: 600;
+}
+
+.playTime{
+    display: flex;
+    justify-content: flex-end;
+    min-width: 33%;
+    font-weight: 600;
+}
+
 .playbtn{
     display: flex;
     gap: 10px;
+    justify-content: center;
+    min-width: 33%;
 }
+
+.playbtn img{
+    cursor: pointer;
+}
+
+.songsList{
+    overflow-y: scroll;
+    height: 53vh;
+    padding-right: 10px;
+}
+
+.songsList li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.currently-playing {
+    border: 0.5px solid #00d66b;
+}
+
+.songName{
+    gap: 15px;
+}
+
+.playNow{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* cursor: pointer; */
+}
+
+.songDetails h5{
+    font-size: 12px;
+    font-weight: 700;
+}
+.songDetails h6{
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.playNow span{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+
+.seekbar {
+    height: 4px;
+    width: 100%;
+    background: #555;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+}
+
+.circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: white;
+    position: relative;
+    bottom: 5px;
+    /* left: 50%; */
+    transition: left 0.1s;
+}
+/* 
+
+.seekbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    background: #555;
+    outline: none;
+    transition: background 0.2s;
+}
+
+.seekbar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.seekbar::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+} */
